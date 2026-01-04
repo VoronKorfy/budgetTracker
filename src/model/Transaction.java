@@ -1,26 +1,15 @@
 package model;
 
 public class Transaction {
-    private float amount;
-    private String description;
+    public int studentId;
+    public float amount;
+    public String description;
 
-    private Transaction next;
-
-    public Transaction(float amount, String description) {
+    public Transaction(int studentId, float amount, String description) {
+        this.studentId = studentId;
         this.amount = amount;
         this.description = description;
     }
-    public float getAmount() {
-        return amount;
-    }
-    public String getDescription() {
-        return description;
-    }
-    public Transaction getNext() {
-        return next;
-    }
-    public void setNext(Transaction next) {
-        this.next = next;
-    }
 }
+
 
