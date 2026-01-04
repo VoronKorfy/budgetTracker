@@ -1,12 +1,10 @@
 package model;
 
 public class Transaction {
-    public int studentId;
     public float amount;
     public String description;
 
-    public Transaction(int studentId, float amount, String description) {
-        this.studentId = studentId;
+    public Transaction(float amount, String description) {
         this.amount = amount;
         this.description = description;
     }
