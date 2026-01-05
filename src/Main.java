@@ -38,7 +38,7 @@ void main() {
                     int dateOfOperation = Integer.parseInt(displayedDay);
                     showOperationHistory(tracker, dateOfOperation);
                 } else {
-                    showOperationHistory(tracker, todayDate);
+                    showOperationHistory(tracker, todayDate());
                 }
             }
             case SHOW_INCOME_HISTORY -> showIncomeHistory(tracker);
